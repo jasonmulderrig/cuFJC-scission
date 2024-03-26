@@ -1,6 +1,6 @@
-composite_ufjc_scission: The Python package for the composite uFJC model with scission
+cufjc_scission: The Python package for the composite uFJC (cuFJC) model with scission
 
-Copyright (C) 2022 Jason Mulderrig
+Copyright (C) 2024 Jason Mulderrig
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

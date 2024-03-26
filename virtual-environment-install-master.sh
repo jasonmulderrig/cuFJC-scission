@@ -2,14 +2,11 @@
 
 # Make sure the VENV_PATH variable is correctly set based upon the computer system being used, as follows
 
-# For the workstation AnalyticalEngine
-VENV_PATH="/home/jason_mulderrig/research/projects/composite-uFJC-scission"
+# # For the workstation AnalyticalEngine
+# VENV_PATH="/home/jason_mulderrig/research/projects/cuFJC-scission"
 
-# # For the laptop WSL2 running Ubuntu 20.04
-# VENV_PATH="/home/jasonmulderrig/research/projects/temp"
-
-# # For the Macbook Air
-# VENV_PATH="/Users/jasonmulderrig/research/projects/composite-uFJC-scission"
+# For the Macbook Air
+VENV_PATH="/Users/jasonmulderrig/research/projects/cuFJC-scission"
 
 # Set up Python virtual environment and associated Python packages
 
@@ -32,6 +29,7 @@ fi
 source bin/activate
 
 pip3 install wheel && pip3 install --upgrade setuptools && pip3 install --upgrade pip
-pip3 install numpy scipy mpmath sympy matplotlib pynverse
+pip3 install numpy
+pip3 install cufjc==1.6.0
 
 deactivate
