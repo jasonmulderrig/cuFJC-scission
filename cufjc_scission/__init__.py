@@ -3,4 +3,4 @@ from .cufjc_scission_model import *
 from .rate_dependence_scission import *
 from .scission_model import *
 
-__version__ = "1.0.0"
+__version__ = "1.6.0"
