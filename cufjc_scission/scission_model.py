@@ -1,32 +1,32 @@
-"""The module for the composite uFJC scission model specifying the
-fundamental analytical scission model.
+"""The module for the cuFJC scission model specifying the fundamental
+analytical scission model.
 """
 
 # Import external modules
 from __future__ import division
-from cufjc import CompositeuFJC
+from cufjc import cuFJC
 import numpy as np
 
 
-class AnalyticalScissionCompositeuFJC(CompositeuFJC):
-    """The composite uFJC scission model class specifying the
-    fundamental analytical scission model.
+class AnalyticalScissioncuFJC(cuFJC):
+    """The cuFJC scission model class specifying the fundamental
+    analytical scission model.
 
     This class contains methods specifying the fundamental scission 
     model, which involve defining both energetic and probabilistic
     quantities. It inherits all attributes and methods from the 
-    ``CompositeuFJC`` class.
+    ``cuFJC`` class.
     """
     def __init__(self, **kwargs):
         """
-        Initializes the ``AnalyticalScissionModelCompositeuFJC`` class.
+        Initializes the ``AnalyticalScissioncuFJC`` class.
         
         Initialize and inherit all attributes and methods from the
-        ``CompositeuFJC`` class instance. Calculate and retain
-        parameters that intrinsically depend on the fundamental scission
-        model in the composite uFJC scission model.
+        ``cuFJC`` class instance. Calculate and retain parameters that
+        intrinsically depend on the fundamental scission model in the
+        cuFJC scission model.
         """
-        CompositeuFJC.__init__(self, **kwargs)
+        cuFJC.__init__(self, **kwargs)
 
         # Parameters needed for numerical calculations
         self.lmbda_nu_hat_inc = 0.0001

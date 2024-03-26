@@ -1,5 +1,5 @@
-"""The module for the composite uFJC scission model specifying the
-rate-dependent or rate-independent nature of scission.
+"""The module for the cuFJC scission model specifying the rate-dependent
+or rate-independent nature of scission.
 """
 
 # Import external modules
@@ -9,16 +9,15 @@ import sys
 
 
 class RateIndependentScission(object):
-    """The composite uFJC scission model class specifying
-    rate-independent scission.
+    """The cuFJC scission model class specifying rate-independent
+    scission.
 
     This class contains methods specifying rate-independent scission for
-    the composite uFJC chain model, which involve defining both
-    energetic and probabilistic quantities. Via class inheritance in the
-    ``RateIndependentScissionCompositeuFJC`` class, this class inherits
-    all attributes and methods from the
-    ``AnalyticalScissionCompositeuFJC`` class, which inherits all
-    attributes and methods from the ``CompositeuFJC`` class.
+    the cuFJC chain model, which involve defining both energetic and
+    probabilistic quantities. Via class inheritance in the
+    ``RateIndependentScissioncuFJC`` class, this class inherits all
+    attributes and methods from the ``AnalyticalScissioncuFJC`` class,
+    which inherits all attributes and methods from the ``cuFJC`` class.
     """
     def __init__(self):
         pass
@@ -91,24 +90,22 @@ class RateIndependentScission(object):
     
 
 class RateDependentScission(object):
-    """The composite uFJC scission model class specifying rate-dependent
-    scission.
+    """The cuFJC scission model class specifying rate-dependent scission.
 
     This class contains methods specifying rate-dependent scission for
-    the composite uFJC chain model, which involve defining both
-    energetic and probabilistic quantities. Via class inheritance in the
-    ``RateDependentScissionCompositeuFJC`` class, this class inherits
-    all attributes and methods from the
-    ``AnalyticalScissionCompositeuFJC`` class, which inherits all
-    attributes and methods from the ``CompositeuFJC`` class.
+    the cuFJC chain model, which involve defining both energetic and
+    probabilistic quantities. Via class inheritance in the
+    ``RateDependentScissioncuFJC`` class, this class inherits all
+    attributes and methods from the ``AnalyticalScissioncuFJC`` class,
+    which inherits all attributes and methods from the ``cuFJC`` class.
     """
     def __init__(self, **kwargs):
         omega_0 = kwargs.get("omega_0", None)
 
         if omega_0 is None:
             error_message = """\
-                Error: Need to specify the microscopic frequency of segments \
-                in the chains for rate-dependent deformation. \
+                Error: Need to specify the microscopic frequency of \
+                segments in the chains for rate-dependent deformation. \
                 """
             sys.exit(error_message)
         
